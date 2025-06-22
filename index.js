@@ -1,6 +1,6 @@
 const express = require("express")
 const mongoose = require("mongoose")
-require(".env").config()
+require("dotenv").config()
 const app = express()
 app.use(express.json())//req.body parsal
 app.use(express.static("dist"))//req.body parsal
